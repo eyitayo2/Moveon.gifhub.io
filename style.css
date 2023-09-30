@@ -61,11 +61,8 @@
 	background-color: white;
 	width:287px ;
 	height:40px;
-	padding: 16px 35px;
+	padding:8px 16px ; 16px 35px
 	display: inline-block;
-
-	
-
 
 
 }
@@ -79,9 +76,10 @@
 
 
 .main{
-	width: 100%;
+	
 	height:200vh ;
 	background-color:#f8f2ed ;
+	width: 100%;
 
 }
 .intro{
@@ -90,7 +88,10 @@
 	left:50% ;
 	transform:translate(-50%)translateY(-50%) ;
 	text-align:center ;
+ font-size: 25px;
 
+
+    
 
 }
 
@@ -104,7 +105,7 @@
 	 	font-size:18px ;
 	line-height:70px ;
 }
-.intro h5:after{
+.intro h5:before{
 	content: "";
     position: absolute;
     background-color: red;
@@ -122,7 +123,10 @@
 	letter-spacing:10px ;
 	line-height:24px ;
 	font-weight:bold ;
-   word-spacing:0.4rem; 
+   word-spacing:0.4rem;
+  
+
+
 }
 
 
@@ -164,9 +168,9 @@
 }   
 .section{
 	width:100% ;
-	height:80vh;
+	
 	background:white ;
-	display:flex ;
+	display:flex;
 
 }
 .about{
@@ -174,15 +178,30 @@
 	align-items:center ;
 	line-height:150% ;
 	word-spacing:0.4rem; 
-	width:35% ;
-	margin-bottom:0px ;
+	width:45% ;
+	
+
 }
 .about h2{
 	padding-top:10px ;
 	padding-bottom:10px ;
 	margin-left:19px ;
+	text-decoration: none;
+   position: relative;
+
 
 }
+.about h2:before{
+	content: "";
+    position: absolute;
+    background-color: red;
+    height:4px ;
+    width: 20%;
+    bottom:0.1rem ;
+    left:5% ;
+   transform:translate(-20%)translateY(-20%) ;
+
+}    
 
 
 
@@ -201,26 +220,52 @@
    bottom: 0;
     left: 0;
 margin-bottom:0 ;
+ display:flex;
+  flex-wrap:wrap 
+flex-basis:100% ;
+gap:20px ;
+  
+
 }
 .container{
-	display:flex ;
-	float:right ;
-	flex-direction:column;
-    
-	width:400px ;
-	color:black;
-	margin-right:300px ;
-	position:absolute ;
-	top:50%;
-	left:50% ;
-	transform:translate(-50%)translateY(-50%) ;
-	text-align:center ;
-
+	width:600px ;
+	margin-left: 50px;
 
 	
 	
 
 }
+.container h2{
+	margin-top:3rem ;
+
+}
+.container h2{
+	padding-top:10px ;
+	padding-bottom:10px ;
+	margin-left:19px ;
+	text-decoration: none;
+   position: relative;
+
+
+}
+.container h2:before{
+	content: "";
+    position: absolute;
+    background-color: red;
+    height:4px ;
+    width: 17%;
+    bottom:0.1rem ;
+    left:5% ;
+   transform:translate(-20%)translateY(-20%) ;
+
+} 
+.container p{
+	margin-top:2rem ;
+	margin-bottom: 0;
+	line-height:150% ;
+	word-spacing:0.4rem;
+
+}   	
 .section3{
 
 height:40vh ;
@@ -280,45 +325,36 @@ font-size:28px ;
     margin-bottom:0 ;
     margin-top:0 ;
     margin-left:0 ;
-    width:100hv% ;
+    width:100% ;
+    height:600px;
     }
-.content2{
-    display: flex;
-    width: 930px;
-    height: 500px;
-    margin-top:1.2rem ;
-   margin-left:10px ;
-   
-}
-    
 
-}
-.contact2{
-
-    text-align: center;
-    width: 380px;
-    height: 400px;
-    background-color: #fff;
-    margin-top: 50px;
-    margin-left: 10px;
-    border-radius: 20px;
-
-}
-#sub-frame-error{
-	float:right ;
-
-}
 
 form h2{
     color: black;
     margin: 1.2rem;
     font-size:16px ;
     margin-left: 0;
+    
 }
+
+form h1:after{
+	content: "";
+    position: absolute;
+    background-color: red;
+    height:0.4rem ;
+    width:6%;
+    bottom:520px ;
+    left:7% ;
+   transform:translate(-50%)translateY(-50%) ;
+
+} 
 
 form{
     margin-top: 30px;
     margin-left: 50px;
+    text-decoration: none;
+  
 }
 
 input{
@@ -343,14 +379,13 @@ textarea{
 }
 
 button{
-	margin:1.2rem ;
-	margin-left:0 ;
+	 margin-bottom:6rem;
     cursor: pointer;
     text-decoration: none;
     padding: 6px 16px;
     font-size: 18px;
     color:white;
-    background-color:deepskyblue ;
+    background-color:darkslateblue ;
     font-family: cursive;
     border: 0;
     outline: 0;
@@ -386,7 +421,7 @@ footer .content .box{
 footer .content .topic{
   font-size: 19px;
   font-weight: 600;
-  color: darkred;
+  color:red;
   margin-bottom: 16px;
   margin-top: 1.4rem;
 
@@ -499,4 +534,15 @@ and(max-device-width:1024px)
 and(-webkit-min-device-pixel-ratio:2)
 and(orietation:portrait){
 	
+}
+@media only screen and (min-width:640px) {
+	.section2{
+		flex-basis:50% ;
+}
+@media only screen and (min-width:960px) {
+	.section2{
+		flex-basis:33.333% ;
+}
+@media only screen and (min-width:12000px) {
+
 }
