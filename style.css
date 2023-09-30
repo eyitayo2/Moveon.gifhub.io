@@ -61,7 +61,7 @@
 	background-color: white;
 	width:287px ;
 	height:40px;
-	padding:8px 16px ; 16px 35px
+	padding:8px 16px ; 
 	display: inline-block;
 
 
@@ -229,7 +229,8 @@ gap:20px ;
 }
 .container{
 	width:600px ;
-	margin-left: 50px;
+	margin-left: 50px
+         height:50vh ;
 
 	
 	
