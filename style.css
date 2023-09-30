@@ -311,11 +311,11 @@ font-size:28px ;
 color:white;	
 
 }
-.container3 h5{
+.container3 h6{
 	color:red ;
 	text-align: center;
 	word-spacing:0.1rem ;
-	font-size:16px ;
+	font-size:18px ;
 }
 .main2{
    display: flex;
